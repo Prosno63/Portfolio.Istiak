@@ -35,6 +35,24 @@ nav{
 span{
 	color: #f9004d;
 }
+
+.checkbtn{
+
+	font-size: 30px;
+	color: aliceblue;
+	float: left;
+	line-height: 70px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+
+
+}
+
+#check{
+	display: none;
+}
+
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
@@ -64,6 +82,23 @@ nav ul li a:hover{
 .btn:hover{
 	transform: scale(1.2);
 }
+.btn-end{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	margin-bottom: 25px;
+	transition: transform .4s;
+
+}
+
+.btn-end:hover{
+	transform: scale(1.2);
+}
+
 .content{
 	position: absolute;
 	top: 50%;
@@ -322,7 +357,7 @@ footer p:nth-child(2){
 	font-size: 14px; 
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:700px) {
 
 	/*Hero media*/
 
@@ -331,40 +366,67 @@ footer p:nth-child(2){
 	
 	}
 	nav{
+
 		display: flex;
+		flex-direction: row-reverse;
 		align-items: center;
-		justify-content: space-between;
 		padding-top: 45px;
 		padding-left: 3%;
 		padding-right: 3%;
+		background-color: #191919;
 	
 	}
-	
-	
+
+
 	.logo{
 		color: rgb(182, 6, 6);
 		font-size: 18px;
 		letter-spacing: 1px;
 		cursor: pointer;
+		margin-right: 35px;
 	}
 	span{
 		color: #f9004d;
 	}
-	nav ul li{
-		list-style-type: none;
-		display: inline;
-		padding: 25px  20px;
-		margin-bottom: 5px;
+
+	.checkbtn{
+		display: block;
 	}
+	ul{
+		position: fixed;
+		width: 35%;
+		height: 55vh;
+		top: 100px;
+		left: -100%;
+		padding-bottom: 10px;
+		align-items: center;
+		transition: all .5s;
+		background-color: #192819;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 10px 0;
+		line-height: 30px;
+	}
+
+
 	nav ul li a{
-		color:orangered;
-		text-decoration: none;
-		font-weight: bold;
-		text-transform: capitalize;
+		display: block;
+		margin: 2px;
+		font-size: 20px;
+		transition: all .45s ease;
+		gap: 50px;
+		color: orange;
 	}
 	nav ul li a:hover{
-		color: #f9004d;
-		transition: .4s;
+		color: white;
+
+	}
+
+	#check:checked~ul{
+		left: 0;
+
 	}
 	.btn{
 		background-color:#f9004d;
@@ -372,9 +434,9 @@ footer p:nth-child(2){
 		text-decoration: none;
 		border: 2px solid transparent;
 		font-weight: bold;
-		padding: 10px 25px;
+		padding: 8px 10px;
 		border-radius: 30px;
-		margin-right: 40px;
+		margin-right: 10px;
 		margin-bottom: 25px;
 		transition: transform .4s; 
 	}
@@ -556,6 +618,20 @@ footer p:nth-child(2){
 	.social a:hover{
 		transform: scale(1.3);
 		transition: .3s;
+	}
+
+	.btn-end{
+		background-color:#f9004d;
+		color: white;
+		text-decoration: none;
+		border: 2px solid transparent;
+		font-weight: bold;
+		padding: 10px 25px;
+		margin-right: 30px;
+		border-radius: 30px;
+		margin-bottom: 25px;
+		transition: transform .4s;
+	
 	}
 
 	.backtoTop{
