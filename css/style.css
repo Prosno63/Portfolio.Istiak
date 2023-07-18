@@ -121,6 +121,22 @@ h4{
 	letter-spacing: 2px;
 	font-size: 20px;
 }
+
+.content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 250px;
+
+}
+
+.content-img>img{
+	width: 500px;
+	height: 500px;
+	border-radius: 70px;
+	margin-top: 80px;
+	box-shadow: 5px 5px 30px black;
+}
 .newsletter form{
 	width: 380px;
 	max-width: 100%;
@@ -139,7 +155,7 @@ h4{
 	display: inline-block;
 	outline: none;
 	border: none;
-	padding: 10px 40px;
+	padding: 10px 30px;
 	border-radius: 30px;
 	background-color:#f9004d;
 	color: white;
@@ -161,6 +177,8 @@ h4{
 .about img{
 	height: 430px;
 	width: 450px;
+	border-radius: 50px;
+	box-shadow: 5px 5px 30px black;
 }
 .about-text{
 	width: 550px;
@@ -305,17 +323,24 @@ h5{
     justify-content: space-evenly;
     text-align: start;
 	align-items: center;
-	padding: 15px;
-    gap: 25px;
+	padding: 5px;
 
 }
 
-.resume-item{
-	padding-top: 10px;
-	padding-bottom: 10px;
+.item-title{
+	margin-bottom: 10px;
+	margin-top: 12px;
+	color:white;
 }
-.resume-item>p{
-	justify-content: center;
+
+.resume-info{
+	margin-bottom: 10px;
+}
+
+
+.resume-description{
+	margin-bottom: 5px;
+	color: white;
 }
 
 .contact-me{
@@ -488,6 +513,10 @@ footer p:nth-child(2){
 		transform: scale(1.09);
 	}
 
+	.content-img{
+		display: none;
+	}
+
 	.newsletter form{
 		width: 300px;
 		position: relative;
@@ -526,6 +555,7 @@ footer p:nth-child(2){
 		height: auto;
 		width: 350px;
 	}
+
 	.about-text{
 		width: 350px;
 	}
@@ -604,36 +634,39 @@ footer p:nth-child(2){
 		padding: 100px 0px;
 		background-color: #192819;
 	}
-
-	.resume>.title{
-		margin-top: 25px;
-		margin-bottom: 15px;
-	}
 	
 	.resume-col-title{
 		color: #edf2ed;
-		font-size: 22px;
+		font-size: 18px;
 		font-weight: 700;
-		padding-bottom: -35px;
 		text-align: center;
 	}
-
 	
 	.resume-container{
 		display: flex;
 		justify-content: space-evenly;
 		text-align: start;
 		align-items: center;
-		padding: 12px;
-		gap: 15px;
+		padding: 10px;
+		gap:7px
+	
 	}
 	
-	.resume-item{
-		padding-top: 10px;
-		padding-bottom: 10px;
+	.item-title{
+		margin-bottom: 10px;
+		margin-top: 12px;
+		font-size: 20px;
 	}
-	.resume-item>p{
-		justify-content: center;
+	
+	.resume-info{
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	
+	
+	.resume-description{
+		margin-bottom: 5px;
+		font-size: 15px;
 	}
 
 	/*contact*/
