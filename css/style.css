@@ -3,6 +3,7 @@
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 .hero{
 	height: 100vh;
@@ -515,7 +516,7 @@ footer p:nth-child(2){
 
 	.content-img{
 		display: none;
-		
+
 	}
 
 	.newsletter form{
